@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:text="@string/alert_dialog_title"
+        android:textStyle="normal|bold"
+        android:textSize="34sp"
+        android:layout_margin="20dp"
+        android:gravity="center" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/staticivili"
+        android:layout_margin="10dp" />
+
+
+
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Ordina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mBtnOk"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:text="Annulla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mBtnCancel"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

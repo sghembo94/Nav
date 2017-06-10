@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.OrderFragment"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Ordine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idMyOrder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="34sp"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:text="Stato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idMyOrder"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/statusMyOrder"
+                android:textSize="24sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:text="Ora:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timeMyOrder"
+                android:textSize="24sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Data:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateMyOrder"
+                android:textSize="24sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_weight="2"
+            android:textStyle="normal|bold"
+            android:textSize="30sp"
+            android:gravity="center" />
+
+        <TextView
+            android:text="Q.ta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_weight="2"
+            android:textStyle="normal|bold"
+            android:textSize="30sp"
+            android:gravity="center" />
+
+        <TextView
+            android:text="Descrizione"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textSize="30sp"
+            android:gravity="center" />
+
+        <TextView
+            android:text="Prezzo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:layout_weight="2"
+            android:textStyle="normal|bold"
+            android:textSize="30sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ListView android:id="@+id/pippo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Totale:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalMyOrder"
+        android:textSize="34sp"
+        android:textAlignment="textEnd"
+        android:textStyle="normal|bold" />
+
+
+</LinearLayout>
